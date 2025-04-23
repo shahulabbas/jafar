@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body style="background-color:powderblue; color:black;">
+    <header>
+        <h1>TIME SCHEDULER</h1>
+    </header>
+    <main>
+        <div class="scheduler-box">
+            <label for="tasksInput">Enter tasks (comma-separated):</label>
+            <textarea id="tasksInput" placeholder="e.g., Breakfast, Meeting, Coding, Lunch"></textarea>
+
+            <label for="totalTimeInput">Enter total available time (in hours):</label>
+            <input type="number" id="totalTimeInput" placeholder="e.g., 8" />
+
+            <button onclick="generateCompressedSchedule()">Generate Schedule</button>
+            
+            <div id="scheduleOutput" class="schedule-output"></div>
+        </div>
+    </main>
+</body>
+</html>
